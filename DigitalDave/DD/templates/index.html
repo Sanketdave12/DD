@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Dave</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <header class="header">
+            <div class="logo">
+                <a href="/" class="text1">
+                    <div class="logo1"> <img src="{% static './images/dd.png' %}" alt="">
+                    </div>
+                    <div class="logo2"> <img src="{% static './images/am.png' %}" alt=""></div>
+                </a>
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu menu1">
+                    <li class="active"><a href="#who">WHO WE ARE</a></li>
+                    <li class="active"><a href="#what">WHAT WE DO</a></li>
+                    <li class="active"><a href="#contact">CONTACT US</a></li>
+                </ul>
+        </header>
+    </div>
+
+    <!-- HOME SECTION -->
+
+    <section class="home">
+        <div class="homecontent">
+            <div class="texthome">
+                <p class="lets">LET'S BUILD YOUR BRAND</p>
+                <p class="intro">THAT NEED NO MORE INTRODUCTION</p>
+            </div>
+            <div class="footer_home">
+               <p class="footerhometext">Our agency's website is under development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO WE ARE SECTION -->
+
+    <section class="who" id="who">
+        <div class="whocontent">
+            <p class="whohead">WHO WE ARE</p>
+            <p class="whotext">We help <span>Start ups & Local Businesses</span> to
+            build and grow their online platform.
+            Our team of innovators and digital marketers
+            in tech and design bring skills above and
+            beyond the ordinary to every project.</p>
+            <img class="desktop" src="{% static './images/desktop.png' %}" alt="">
+            <img class="mobile" src="{% static './images/mobile.png' %}" alt="">
+        </div>
+    </section>
+    
+    <div class="footer"></div>
+
+    <!-- WHAT WE DO SECTION -->
+
+    <section class="what" id="what">
+        <p class="whathead">WHAT WE DO</p>
+        <div class="whatcontent">
+            <div class="design">
+                <div class="design_ul">
+                    <p class="designhead">Design</p>
+                    <ul>
+                        <li>Logo Design</li>
+                        <li>Digital Card Design</li>
+                        <li>UI / UX Design</li>
+                        <li>Poster Design</li>
+                        <li>Label Design</li>
+                        <li>Billboard Design</li>
+                        <li>Social Media Post Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="creation">
+                <div class="creation_ul">
+                    <p class="creationhead">Creation</p>
+                    <ul>
+                        <li>Website ( Responsive )</li>
+                        <li>Android Application</li>
+                        <li>IOS Application</li>
+                        <li> &nbsp;</li>
+                        <li><strong>Social Media lens Filters</strong></li>
+                        <li>Sanpchat Lens</li>
+                        <li>Instagram Lens</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advertise">
+                <div class="advertise_ul">
+                    <p class="advertisehead">Advertisements</p>
+                    <ul>
+                        <li>Commercial ADs</li>
+                        <li>Promotional Videos</li>
+                        <li>Story Advertisements</li>
+                        <li>Print Advertisements</li>
+                        <li>Short Films</li>
+                        <li>Corporate Films</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="digitalm">
+                <div class="digitalm_ul">
+                    <p class="digitalmhead">Digital Marketing</p>
+                    <ul>
+                        <li>Search Engine Optimization</li>
+                        <li>Search Engline Marketing</li>
+                        <li>Social Media Management</li>
+                        <li>Social Media Marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer"></div>
+    
+    <!-- CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+        <div class="contactcontent">
+            <p class="contacthead">CONTACT US</p>
+            <div class="form">
+                <div class="formhead">Inquiry Form</div>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="text" placeholder="Name" name="name" required><br>
+                    <input type="number" placeholder="Mobile Number" name="phone" required><br>
+                    <input type="email" placeholder="Email" name="email" required><br>
+                    <input type="url" placeholder="Website(Optional)" name="website"><br>
+                    <input type="text" placeholder="Message" name="message" required><br>
+                    <button type="submit" class="subbtn">SUBMIT</button>
+                </form>
+            </div>
+            <div class="buttons">
+                <div class="callbtn"><a href="tel:+91 9624085472"><img src="{% static './images/call.svg' %}" alts=""></a></div>
+                <div class="mailbtn"><a href="mailto: sddave1998@gmail.com"><img src="{% static './images/mail.svg' %}" alts=""></a></div>
+                <div class="whatsappbtn"><a href="https://api.whatsapp.com/message/XDHC66XT6QHJA1"><img src="{% static './images/wp.svg' %}" alts=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lastfooter"></div>
+
+</body>
+</html>

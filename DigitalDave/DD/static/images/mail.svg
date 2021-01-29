@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="182" viewBox="0 0 432 182">
+  <defs>
+    <filter id="Rectangle_12" x="0" y="0" width="432" height="182" filterUnits="userSpaceOnUse">
+      <feOffset dx="17" dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9" data-name="Group 9" transform="translate(-2884.5 -4611.5)">
+    <g transform="matrix(1, 0, 0, 1, 2884.5, 4611.5)" filter="url(#Rectangle_12)">
+      <g id="Rectangle_12-2" data-name="Rectangle 12" transform="translate(20.5 22.5)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="357" height="107" rx="32" stroke="none"/>
+        <rect x="0.5" y="0.5" width="356" height="106" rx="31.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_5" data-name="Group 5" transform="translate(2930 4644)">
+      <path id="Path_6" data-name="Path 6" d="M69.249,8h-58a7.217,7.217,0,0,0-7.214,7.25L4,58.749A7.248,7.248,0,0,0,11.25,66h58a7.248,7.248,0,0,0,7.25-7.25V15.25A7.248,7.248,0,0,0,69.249,8Zm0,14.5-29,18.125L11.25,22.5V15.25l29,18.125,29-18.125Z" transform="translate(3.25 6.5)"/>
+      <path id="Path_7" data-name="Path 7" d="M0,0H87V87H0Z" fill="none"/>
+    </g>
+    <text id="Mail_us" data-name="Mail us" transform="translate(3049 4704)" fill="#494949" font-size="50" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Mail us</tspan></text>
+  </g>
+</svg>
